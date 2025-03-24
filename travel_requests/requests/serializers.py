@@ -34,10 +34,25 @@ class EmployeeSerializer(serializers.ModelSerializer):
         fields (str): Specifies that all fields should be serialized.
     """
     user = UserSerializer()
+    manager = serializers.SerializerMethodField()
 
     class Meta:
         model = models.Employee
         fields = '__all__'
+
+    def get_manager(self, obj):
+        if obj.manager:
+            return {
+                "id": obj.manager.id,
+                "user": {
+                    "id": obj.manager.user.id,
+                    "first_name": obj.manager.user.first_name,
+                    "last_name": obj.manager.user.last_name,
+                    "email": obj.manager.user.email,
+                    "username": obj.manager.user.username,
+                }
+            }
+        return None
 
     # def create(self, data):
     #     """

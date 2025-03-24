@@ -225,3 +225,3359 @@ Watching for file changes with StatReloader
 C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
 Watching for file changes with StatReloader
 Bad Request: /api/employee/requests/new/
+Watching for file changes with StatReloader
+Request found: 15
+Request found: 15
+Method Not Allowed: /api/employee/requests/15/edit/
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Internal Server Error: /api/employee/requests/15/view/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Internal Server Error: /employee/me/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Internal Server Error: /api/employee/requests/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Internal Server Error: /api/employee/requests/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Internal Server Error: /employee/me/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Internal Server Error: /api/employee/requests/15/view/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Watching for file changes with StatReloader
+Request found: 15
+Token generated for employee
+Not Found: /api/auth/employee/login/
+Internal Server Error: /api/employee/requests/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Internal Server Error: /api/employee/requests/15/view/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Internal Server Error: /employee/me/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Watching for file changes with StatReloader
+Token generated for manager
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden: /api/manager/requests/
+Method Not Allowed: /api/auth/manager/login/
+Token generated for manager
+Request found: 15
+Request found: 15
+Request found: 15
+Token generated for manager
+Request found: 15
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden: /api/admin/requests/
+Token generated for admin
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Token generated for admin
+Method Not Allowed: /api/admin/requests/
+Admin authentication successful 
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\permissions.py changed, reloading.
+Watching for file changes with StatReloader
+Admin does not exist
+Forbidden: /api/admin/requests/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\permissions.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden: /api/manager/requests/
+Forbidden: /api/manager/requests/
+Forbidden: /api/manager/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/manager/requests/
+Forbidden: /api/manager/requests/
+Forbidden: /api/manager/requests/
+Forbidden: /api/admin/requests/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Not Found: /api/auth/admin/login/
+Token generated for admin
+Forbidden: /api/admin/requests/
+Watching for file changes with StatReloader
+Forbidden: /api/admin/requests/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden: /api/manager/requests/
+Forbidden: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Not Found: /favicon.ico
+Request found: 15
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Watching for file changes with StatReloader
+Forbidden: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Token generated for admin
+Unauthorized: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Token generated for admin
+Unauthorized: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Unauthorized: /api/employee/requests/
+Token generated for employee
+Unauthorized: /api/employee/requests/
+Token generated for admin
+Unauthorized: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Unauthorized: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Forbidden: /api/admin/requests/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /api/auth/admin/login/
+Token generated for admin
+Admin authentication successful 
+Forbidden: /api/manager/requests/
+Token generated for manager
+Admin authentication successful 
+Request found: 10
+Request found: 10
+Admin authentication successful 
+Request found: 15
+Admin authentication successful 
+Request found: 14
+Admin authentication successful 
+Request found: 10
+Admin authentication successful 
+Request found: 15
+Admin authentication successful 
+Request found: 14
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Request found: 15
+Request found: 15
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Request found: 10
+Request found: 10
+Admin authentication successful 
+Request found: 14
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Request found: 14
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Watching for file changes with StatReloader
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/admin/employees/7/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py", line 246, in view_employee_admin
+    selected_employee = selected_employee.select_related('employee__user','manager__user')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Employee' object has no attribute 'select_related'
+Internal Server Error: /api/admin/employees/7/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py", line 246, in view_employee_admin
+    selected_employee = selected_employee.select_related('employee__user','manager__user')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Employee' object has no attribute 'select_related'
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/admin/employees/7/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Internal Server Error: /api/admin/employees/7/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Internal Server Error: /api/admin/employees/7/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Watching for file changes with StatReloader
+Received request to list employees
+Received request to list employees
+Unauthorized: /api/admin/employees/new/
+Unauthorized: /api/admin/employees/new/
+Unauthorized: /api/admin/employees/new/
+Unauthorized: /api/admin/employees/new/
+Unauthorized: /api/admin/employees/new/
+Unauthorized: /api/admin/employees/new/
+Internal Server Error: /api/admin/employees/new/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2053, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'albert_manager'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py", line 342, in new_employee
+    manager = Employee.objects.get(id=manager_id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\query.py", line 1492, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\query.py", line 1319, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\lookups.py", line 341, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'albert_manager'.
+User creation failed: <ul class="errorlist"><li>username<ul class="errorlist"><li>A user with that username already exists.</li></ul></li></ul>
+Bad Request: /api/admin/employees/new/
+User creation failed: <ul class="errorlist"><li>username<ul class="errorlist"><li>A user with that username already exists.</li></ul></li></ul>
+Bad Request: /api/admin/employees/new/
+Successfully created Employee ID: 16
+Received request to list employees
+Received request to list employees
+User creation failed: <ul class="errorlist"><li>username<ul class="errorlist"><li>A user with that username already exists.</li></ul></li></ul>
+Bad Request: /api/admin/employees/new/
+Successfully created Employee ID: 17
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/16/edit/
+Bad Request: /api/admin/employees/16/
+Bad Request: /api/admin/employees/16/
+Bad Request: /api/admin/employees/16/
+Bad Request: /api/admin/employees/16/
+Bad Request: /api/admin/employees/16/
+Received request to list employees
+Bad Request: /api/admin/employees/7/
+Bad Request: /api/admin/employees/7/
+Bad Request: /api/admin/employees/7/
+Received request to list employees
+Received request to list employees
+Bad Request: /api/admin/employees/17/
+Bad Request: /api/admin/employees/17/
+Internal Server Error: /api/admin/employees/17/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Internal Server Error: /api/auth/manager/login/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py", line 780, in manager_login
+    user = authenticate(username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Internal Server Error: /api/auth/manager/login/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py", line 780, in manager_login
+    user = authenticate(username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Internal Server Error: /api/auth/manager/login/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py", line 780, in manager_login
+    user = authenticate(username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Internal Server Error: /api/auth/manager/login/
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py", line 780, in manager_login
+    user = authenticate(username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\umer.saleh\Documents\Travel Request(Django)\venv\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+Watching for file changes with StatReloader
+Token generated for manager
+Unauthorized: /api/manager/requests/
+Unauthorized: /api/manager/requests/
+Token generated for manager
+Unauthorized: /api/manager/requests/
+Unauthorized: /api/manager/requests/
+Token generated for manager
+Unauthorized: /api/manager/requests/
+Unauthorized: /api/manager/requests/
+Unauthorized: /api/manager/requests/
+Unauthorized: /api/manager/requests/
+Token generated for manager
+Unauthorized: /api/manager/requests/
+Unauthorized: /api/manager/requests/
+Unauthorized: /api/manager/requests/
+Token generated for manager
+Unauthorized: /api/manager/requests/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Method Not Allowed: /api/auth/admin/login/
+Token generated for admin
+Token generated for employee
+Forbidden: /api/manager/requests/
+Token generated for manager
+Token generated for employee
+Token generated for employee
+Token generated for employee
+Token generated for employee
+Token generated for employee
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 16
+Request found: 16
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 16
+Not Found: /api/auth/employee/login/
+Not Found: /api/auth/employee/login/
+Not Found: /api/auth/employee/login/
+Not Found: /api/auth/employee/login/
+Not Found: /api/auth/employee/login/
+Not Found: /api/auth/employee/login/
+Not Found: /api/auth/employee/login/
+Not Found: /api/auth/employee/login/
+Not Found: /api/auth/employee/login/
+Not Found: /api/auth/employee/login/
+Not Found: /api/auth/employee/login/
+Not Found: /api/auth/employee/login/
+Token generated for employee
+Request found: 15
+Request found: 15
+Token generated for employee
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Token generated for employee
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Forbidden: /api/manager/requests/
+Token generated for manager
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Token generated for manager
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Unauthorized: /api/manager/requests/
+Unauthorized: /api/manager/requests/
+Unauthorized: /api/manager/requests/
+Unauthorized: /api/manager/requests/
+Unauthorized: /api/manager/requests/
+Unauthorized: /api/manager/requests/
+Token generated for manager
+Request found: 15
+Request found: 16
+Request found: 15
+Request found: 15
+Token generated for employee
+Request found: 15
+Request found: 15
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Request found: 16
+Request found: 15
+Watching for file changes with StatReloader
+Forbidden: /api/manager/requests/
+Forbidden: /api/manager/requests/
+Token generated for manager
+No requests found
+Not Found: /api/manager/requests/
+No requests found
+Not Found: /api/manager/requests/
+No requests found
+Not Found: /api/manager/requests/
+Request found: 15
+Request found: 17
+Request found: 15
+Request found: 17
+No requests found
+Not Found: /api/manager/requests/
+No requests found
+Not Found: /api/manager/requests/
+No requests found
+Not Found: /api/manager/requests/
+No requests found
+Not Found: /api/manager/requests/
+No requests found
+Not Found: /api/manager/requests/
+No requests found
+Not Found: /api/manager/requests/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+No requests found
+Not Found: /api/manager/requests/
+No requests found
+Not Found: /api/manager/requests/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+No requests found
+Not Found: /api/manager/requests/
+No requests found
+Not Found: /api/manager/requests/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+No requests found
+Not Found: /api/manager/requests/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+No requests found
+Not Found: /api/manager/requests/
+No requests found
+Not Found: /api/manager/requests/
+Method Not Allowed: /api/auth/manager/login/
+Token generated for manager
+No requests found
+Not Found: /api/manager/requests/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+No data found for the given filters.
+Watching for file changes with StatReloader
+Unauthorized: /api/manager/requests/
+Token generated for manager
+No data found for the given filters.
+Request found: 15
+Request found: 16
+Request found: 15
+Request found: 17
+Request found: 16
+Request found: 17
+Request found: 15
+Request found: 17
+Request found: 15
+Request found: 16
+Request found: 17
+Request found: 17
+Request found: 17
+Request found: 16
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 17
+Request found: 16
+Request found: 15
+Request found: 15
+Request found: 17
+Request found: 17
+Request found: 17
+Request found: 17
+Request found: 17
+Request found: 17
+Request found: 17
+Request found: 17
+Request found: 17
+Request found: 17
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 16
+Request found: 17
+Request found: 16
+Request found: 17
+Request found: 15
+Request found: 16
+Request found: 17
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 16
+Request found: 15
+Request found: 17
+Request found: 16
+Request found: 16
+Request found: 16
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 16
+Request found: 16
+Request found: 17
+Request found: 17
+Request found: 17
+Request found: 17
+Request found: 17
+Request found: 17
+Forbidden: /api/employee/requests/
+Token generated for employee
+Request found: 15
+Request found: 16
+Request found: 17
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Request found: 15
+Request found: 15
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Request found: 15
+Request found: 15
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Token generated for manager
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Admin authentication successful 
+Admin authentication successful 
+Request found: 10
+Admin authentication successful 
+Forbidden: /api/admin/requests/
+Token generated for admin
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Request found: 15
+Admin authentication successful 
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Admin authentication successful 
+Request found: 16
+Request found: 16
+Not Found: /api/admin/requests/16/close/
+Request found: 16
+Not Found: /api/admin/requests/16/close/
+Request found: 16
+Request found: 16
+Request found: 16
+Admin authentication successful 
+Forbidden: /api/employee/requests/
+Token generated for employee
+Request found: 16
+Watching for file changes with StatReloader
+Bad Request: /api/auth/employee/login/
+Bad Request: /api/auth/employee/login/
+Token generated for employee
+Unauthorized: /api/employee/requests/
+Token generated for employee
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Request found: 15
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Request found: 15
+Request found: 18
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Request found: 17
+Request found: 17
+Request found: 16
+Request found: 16
+Request found: 16
+Request found: 16
+Request found: 16
+Request found: 16
+Request found: 16
+Request found: 15
+Request found: 17
+Request found: 15
+Request found: 15
+Request found: 15
+Forbidden: /api/manager/requests/
+Not Found: /api/auth/manager/login/
+Token generated for manager
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 16
+Request found: 17
+Request found: 16
+Request found: 15
+Request found: 17
+No data found for the given filters.
+Request found: 15
+Request found: 16
+Request found: 17
+Token generated for employee
+Forbidden: /api/manager/requests/
+Token generated for manager
+Request found: 21
+Request found: 17
+Token generated for employee
+Token generated for employee
+Request found: 21
+Request found: 21
+Forbidden: /api/manager/requests/
+Token generated for manager
+Request found: 15
+Request found: 15
+Request found: 21
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Request found: 21
+Request found: 15
+Request found: 15
+Request found: 16
+Request found: 15
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Request found: 15
+Cannot proceed with action on Request ID 15
+Bad Request: /api/manager/requests/15/action/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Cannot proceed with action on Request ID 15
+Bad Request: /api/manager/requests/15/action/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Request found: 15
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Request found: 15
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Request found: 21
+Request found: 21
+Request found: 21
+Forbidden: /api/employee/requests/
+Token generated for employee
+Request found: 15
+Request found: 15
+Forbidden: /api/manager/requests/
+Token generated for manager
+Request found: 15
+Request found: 15
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Request found: 15
+No data found for the given filters.
+Request found: 15
+Token generated for admin
+Admin authentication successful 
+Request found: 14
+Admin authentication successful 
+Request found: 15
+Admin authentication successful 
+Request found: 16
+Admin authentication successful 
+Request found: 17
+Admin authentication successful 
+Request found: 21
+Admin authentication successful 
+Request found: 15
+Admin authentication successful 
+Request found: 15
+Admin authentication successful 
+Request found: 21
+Forbidden: /api/employee/requests/
+Request found: 21
+Admin authentication successful 
+Forbidden: /api/employee/requests/
+Admin authentication successful 
+Forbidden: /api/employee/requests/
+Admin authentication successful 
+Request found: 21
+Admin authentication successful 
+Request found: 15
+Admin authentication successful 
+Request found: 21
+Request found: 21
+Forbidden: /api/employee/requests/
+Request found: 21
+Forbidden: /api/employee/requests/
+Request found: 21
+Forbidden: /api/employee/requests/
+Admin authentication successful 
+Request found: 10
+Admin authentication successful 
+Request found: 14
+Admin authentication successful 
+Request found: 15
+Admin authentication successful 
+Request found: 21
+Request found: 21
+Request found: 21
+Forbidden: /api/employee/requests/
+Request found: 21
+Admin authentication successful 
+Request found: 21
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Request found: 15
+Admin authentication successful 
+Admin authentication successful 
+Forbidden: /api/employee/requests/
+Admin authentication successful 
+Forbidden: /api/employee/requests/
+Received request to list employees
+Admin authentication successful 
+Forbidden: /api/employee/requests/
+Admin authentication successful 
+Admin authentication successful 
+Forbidden: /api/employee/requests/
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Forbidden: /api/employee/requests/
+Received request to list employees
+Admin authentication successful 
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Bad Request: /api/admin/employees/17/
+Bad Request: /api/admin/employees/17/
+Bad Request: /api/admin/employees/17/
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Bad Request: /api/admin/employees/17/
+Bad Request: /api/admin/employees/17/
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Admin authentication successful 
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Successfully created Employee ID: 18
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Successfully created Employee ID: 19
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Successfully updated Employee ID: 19
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Token generated for admin
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Received request to list employees
+Bad Request: /api/admin/employees/19/
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Bad Request: /api/admin/employees/19/
+Forbidden: /api/employee/requests/
+Received request to list employees
+Bad Request: /api/admin/employees/19/
+Forbidden: /api/employee/requests/
+Received request to list employees
+Bad Request: /api/admin/employees/19/
+Bad Request: /api/admin/employees/19/
+Bad Request: /api/admin/employees/19/
+Bad Request: /api/admin/employees/19/
+Bad Request: /api/admin/employees/19/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Bad Request: /api/admin/employees/19/
+Bad Request: /api/admin/employees/19/
+Forbidden: /api/employee/requests/
+Received request to list employees
+Successfully updated Employee ID: 19
+Successfully updated Employee ID: 19
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Successfully updated Employee ID: 19
+Successfully updated Employee ID: 19
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Successfully updated Employee ID: 19
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Forbidden: /api/employee/requests/
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Watching for file changes with StatReloader
+Not Found: /api/auth/employee/login/
+Token generated for employee
+Request found: 15
+Request found: 15
+Token generated for employee
+Request found: 15
+Request found: 15
+Token generated for employee
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Request found: 15
+Unauthorized: /api/employee/requests/
+Unauthorized: /employee/me/
+Unauthorized: /api/employee/requests/
+Unauthorized: /employee/me/
+Unauthorized: /api/employee/requests/15/view/
+Unauthorized: /api/employee/requests/
+Unauthorized: /api/admin/employees/
+Unauthorized: /api/admin/employees/
+Token generated for admin
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Received request to list employees
+Admin authentication successful 
+Received request to list employees
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Received request to list employees
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Request found: 10
+Admin authentication successful 
+Admin authentication successful 
+Received request to list employees
+Admin authentication successful 
+Admin authentication successful 
+Received request to list employees
+Admin authentication successful 
+Admin authentication successful 
+Admin authentication successful 
+Received request to list employees
+Admin authentication successful 
+Received request to list employees
+Admin authentication successful 
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Admin authentication successful 
+Received request to list employees
+Admin authentication successful 

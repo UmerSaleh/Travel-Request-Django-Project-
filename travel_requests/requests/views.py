@@ -94,7 +94,7 @@ def listing_requests_admin(request):
 
         # If no data matches the filter criteria, return an empty list message
         if not data.exists():
-            return Response({'message': "No requests found"}, status=HTTP_404_NOT_FOUND)
+            return Response([], status=HTTP_200_OK)
 
         serialized = TravelSerializer(data, many=True)
 
@@ -236,7 +236,7 @@ def view_employee_admin(request,employee_id):
     """ 
 
     try:
-        selected_employee = Employee.objects.get(pk=employee_id)
+        selected_employee = Employee.objects.select_related("user", "manager__user").get(pk=employee_id)
         selected_user = selected_employee.user
     except Employee.DoesNotExist:
         logger.error(f"Employee ID {employee_id} not found")
@@ -417,8 +417,8 @@ def listing_requests_manager(request):
 
 
         if not data.exists():
-            logger.error("No requests found")
-            return Response({'message': "No requests found"}, status=HTTP_404_NOT_FOUND)
+            logger.info("No data found for the given filters.")
+            return Response([], status=HTTP_200_OK)
 
         serialized = TravelSerializer(data, many=True)
         return Response(serialized.data, status=HTTP_200_OK)
@@ -444,7 +444,7 @@ def action_request_manager(request,request_id):
         action  = request.data.get('action')
         note = request.data.get('note')
 
-        if selected_request.status_of_request == "submitted":
+        if selected_request.status_of_request == "submitted" or (selected_request.status_of_request == "reverted" and selected_request.is_resubmitted == True):
             if not action or action not in ["approve", "reject", "revert"]:
                 return Response({"message":"Invalid action"}, status = HTTP_404_NOT_FOUND)
 
@@ -458,6 +458,7 @@ def action_request_manager(request,request_id):
                 selected_status = "reverted"
                 date = "date_of_revert"
                 selected_request.resubmission_request = True
+                selected_request.is_resubmitted = False
             
             subject = f'Request {selected_status}'
             message = f'Note:{note} \n Your request for travel has been {selected_status}. Thanks & Regards. - Admin'
@@ -553,7 +554,8 @@ def edit_request_employee(request,request_id):
 
         if selected_request.employee != employee:
             return Response({"error": "You do not have permission to edit this request"}, status=HTTP_400_BAD_REQUEST)
-
+        if selected_request.status_of_request == 'reverted':
+            selected_request.is_resubmitted = 1
         serialized = TravelSerializer(selected_request, data = request.data, partial = True)
         
         if serialized.is_valid():
