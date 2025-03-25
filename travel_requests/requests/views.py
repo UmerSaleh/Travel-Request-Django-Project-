@@ -684,7 +684,7 @@ def emp_request_form(request):
         subject = f'Request submitted from employee-{employee.id}'
         message = f'I have submitted a request for travel. Please look into the details. Thanks & Regards. - Admin'
         from_email = 'umersaleh30570@gmail.com'  
-        recipient_list = [manager.user.email]  
+        recipient_list = [manager.user.email]
 
         if serialized.is_valid():
             serialized.save(employee=employee, manager=manager, status_of_request="submitted")

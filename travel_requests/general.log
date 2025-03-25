@@ -3581,3 +3581,44 @@ Received request to list employees
 Admin authentication successful 
 Received request to list employees
 Admin authentication successful 
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /api/auth/admin/login/
+Bad Request: /api/auth/admin/login/
+Token generated for admin
+Admin authentication successful 
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Received request to list employees
+Admin authentication successful 
+Received request to list employees
+Admin authentication successful 
+Unauthorized: /api/admin/requests/
+Token generated for employee
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/employee/requests/new/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\umer.saleh\Documents\Travel Request(Django)\travel_requests\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
+Bad Request: /api/employee/requests/new/
